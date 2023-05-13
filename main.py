@@ -6,7 +6,8 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-df = pd.read_csv("..//movies_clean1.csv")
+df = pd.read_csv("..//Proy_Ind_1_final//datasets//movies_etl.csv")
+
 #--------------------------------------------------------------------------------------------------
 
 
