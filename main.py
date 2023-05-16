@@ -7,6 +7,7 @@ from sklearn.metrics.pairwise import linear_kernel
 
 
 
+
 df = pd.read_csv("..//Proy_Ind_1_final//datasets//movies_etl.csv")
 data = pd.read_csv("..//Proy_Ind_1_final//datasets//movies_ml.csv")
 
@@ -108,11 +109,12 @@ index = pd.Series(data.index, index = data['title']).drop_duplicates()
 # Funcion de recomendacion 
 
 @app.get("/recomendacion/{pelicula}")
-def recomendacion(titulo, cosine_sim = cosine_sim):
-    if titulo not in index:
+def recomendacion(pelicula: str):
+    local_cosine_sim = cosine_sim
+    if pelicula not in index:
         return "La película no se encuentra entre el 10% de las mejores películas. Intenta con una mejor!"
 
-    idx = index[titulo]
+    idx = index[pelicula]
     sim_scores = list(enumerate(cosine_sim[idx]))
     sim_scores = sorted(sim_scores, key = lambda x: x[1], reverse = True)
     sim_scores = sim_scores[1:6]
