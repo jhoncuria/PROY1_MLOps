@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import linear_kernel
 
 
 
-df = pd.read_csv("..//Proy_Ind_1_final//datasets//movies_etl.csv")
+df = pd.read_csv("../Proy_Ind_1_final/datasets/movies_etl.csv")
 data = pd.read_csv("..//Proy_Ind_1_final//datasets//movies_ml.csv")
 
 app = FastAPI()
