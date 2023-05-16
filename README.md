@@ -117,9 +117,9 @@ Es importante tener en cuenta que esta lista de librerías es solo una muestra y
 
 ## Contacto
 En estas redes redes sociales comunes me encuentras:
-GitHub: github.com/jhoncuria
-LinkedIn: https://www.linkedin.com/in/edgar-jhon-curi-araujo-a1908159
-Discord: jcuri#9566
-Twitter: @JhonCuri2
-Instagram: @JhonCuri
+- GitHub: github.com/jhoncuria
+- LinkedIn: https://www.linkedin.com/in/edgar-jhon-curi-araujo-a1908159
+- Discord: jcuri#9566
+- Twitter: @JhonCuri2
+- Instagram: @JhonCuri
 
