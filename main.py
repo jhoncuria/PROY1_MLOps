@@ -1,10 +1,14 @@
 import pandas as pd
 import numpy as np
 from fastapi import FastAPI
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import linear_kernel
+
+
 
 
 df = pd.read_csv("..//Proy_Ind_1_final//datasets//movies_etl.csv")
-df = pd.read_csv("..//Proy_Ind_1_final//datasets//movies_ml.csv")
+data = pd.read_csv("..//Proy_Ind_1_final//datasets//movies_ml.csv")
 
 app = FastAPI()
 
@@ -86,7 +90,6 @@ def retorno(pelicula: str):
 data = data.drop_duplicates(subset = 'title')
 C = data['vote_average'].mean()
 m = data['vote_count'].quantile(0.90)
-m = data['vote_count'].quantile(0.90)
 data = data.loc[data['vote_count'] >= m]
 def weighted_rating(x, m=m, C=C):
     v = x['vote_count']
@@ -107,7 +110,7 @@ index = pd.Series(data.index, index = data['title']).drop_duplicates()
 @app.get("/recomendacion/{pelicula}")
 def recomendacion(titulo, cosine_sim = cosine_sim):
     if titulo not in index:
-    return "La película no se encuentra entre el 10% de las mejores películas. Intenta con una mejor!"
+        return "La película no se encuentra entre el 10% de las mejores películas. Intenta con una mejor!"
 
     idx = index[titulo]
     sim_scores = list(enumerate(cosine_sim[idx]))
