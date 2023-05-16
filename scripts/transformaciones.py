@@ -104,5 +104,4 @@ df = df.drop(['video', 'imdb_id', 'adult', 'original_title', 'vote_count', 'post
 #--------------------------------------------------------------------------------------------------
 
 
-
-df.to_csv('movies_etl.csv', index=False, encoding='utf-8')
+# df.to_csv('movies_etl.csv', index=False, encoding='utf-8')
