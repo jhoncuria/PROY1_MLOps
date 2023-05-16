@@ -5,11 +5,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 
 
-
-
-
 df = pd.read_csv("movies_etl.csv")
 data = pd.read_csv("movies_ml.csv")
+
 
 app = FastAPI()
 
