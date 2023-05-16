@@ -1,8 +1,6 @@
 anyio
 click
 fastapi
-h11
-idna
 joblib
 numpy
 pandas
@@ -11,7 +9,6 @@ python-dateutil
 pytz
 scikit-learn
 scipy
-six
 sniffio
 starlette
 threadpoolctl
