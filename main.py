@@ -106,7 +106,7 @@ cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)
 data.reset_index(drop = True, inplace = True)
 index = pd.Series(data.index, index = data['title']).drop_duplicates()
 
-# Funcion de recomendacion 
+# Funcion de recomendacion
 
 @app.get("/recomendacion/{pelicula}")
 def recomendacion(pelicula: str):
