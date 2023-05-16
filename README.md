@@ -6,8 +6,6 @@ El Proyecto Individual  de MLOps consiste en desarrollar un sistema de recomenda
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
 
 
-**Table of Contents**
-
 ## Introducción/Objetivo del proyecto
 
 El Proyecto Individual se centra en el desarrollo de MLOps (Machine Learning Operations) para implementar un sistema de recomendación en una startup de servicios de agregación de plataformas de streaming. A continuación, se resumen los principales puntos del proyecto:
